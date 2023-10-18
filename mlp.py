@@ -20,6 +20,7 @@ class Config:
 def generate_data():
     np.random.seed(0)
     X, y = datasets.make_moons(1024, noise=0.2)
+    # X, y = datasets.make_circles(1024, noise=0.2, factor=0.5)
     return X, y
 
 def capture_chart(X, y, model, epoch, loss):
